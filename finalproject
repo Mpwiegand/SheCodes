@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crochet Club</title>
+         <style>
+    h1 {
+      font-size: 36px;
+      margin: 30px 0px 0px 0px;
+      padding: 30px 0px 0px 0px;
+    }
+    h2 {
+      font-weight: 300;
+      margin: 0px 0px 20px;
+      font-size: 24px;
+    }
+    strong {
+      font-weight: 500;
+    }
+    p {
+      padding: 0px 50px;
+      text-align: left;
+      line-height: 1.5;
+    }
+
+    a {
+      color: #b0847f;
+
+      text-decoration: none;
+    }
+    a:hover {
+      color: #552f2d;
+      text-decoration: underline;
+    }
+
+    img {
+      border: 1.5px solid #552f2d;
+      border-radius: 5px;
+      max-width: 80%;
+    }
+
+    button {
+      padding: 10px 15px;
+      border: 1.5px solid #552f2d;
+      border-radius: 15px;
+      box-shadow: 5px 5px 10px #552f2d;
+      background-color: #b0847f;
+      color: #552f2d;
+      transition: all 150ms ease-in-out;
+    }
+    button:hover {
+      background-color: #552f2d;
+      color: #b0847f;
+      border: 1.5px solid #b0847f;
+      cursor: pointer;
+    }
+    hr {
+      background-color: #552f2d;
+      border: 1px solid #552f2d;
+      margin: 20px 50px;
+    }
+    .main {
+      background: linear-gradient(
+        180deg,
+        #b0847f 0%,
+        #552f2d 107.02%,
+        #f6f3ff 175.62%
+      );
+      margin: 10px 250px 15px;
+      text-align: center;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      border-radius: 20px;
+      max-width: 100%;
+    }
+    .word {
+      font-weight: 500;
+    }
+    .footer {
+      padding: 0px 0px 20px 0px;
+      text-align: center;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <body>
+    <div class="main">
+      <h1>Join the Crochet Lovers Club</h1>
+      <h2>Show off your <strong>awesome projects!</strong></h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/040/125/original/pexels-anete-lusina-4792079.jpg?1657568800"
+        width="420px
+      "
+      />
+      <p>
+        <span class="word">Crochet</span> is a process of creating textiles by
+        using a crochet hook to interlock loops of yarn, thread, or strands of
+        other materials. The name is derived from the French term
+        <em>crochet</em>, meaning 'small hook'. Hooks can be made from a variety
+        of materials, such as metal, wood, bamboo, or plastic. The key
+        difference between crochet and knitting, beyond the implements used for
+        their production, is that each stitch in crochet is completed before the
+        next one is begun, while knitting keeps many stitches open at a time.
+        <br />
+        <br />
+
+        <a
+          href="https://en.wikipedia.org/wiki/Crochet"
+          target="_blank"
+          alt="crochet-hook"
+          >Learn more about crochet!</a
+        >
+      </p>
+      <button>🧶 Join now! 🧶</button>
+      <hr />
+      <p class="footer">
+        This page was built by <span class="name">Maeve Wiegand</span> for
+        SheCodes Basics
+      </p>
+    </div>
+    <script>
+      function joinNow() {
+        let name = prompt("What is your name?");
+        if (name.length > 0) {
+          alert(
+            "Hello " + name + ", we'll be in touch soon. Happy crocheting!"
+          );
+        } else {
+          alert("You can't join if you don't enter a name!");
+        }
+       
+      }
+       let contactButton = document.querySelector("button");
+        contactButton.addEventListener("click", joinNow);
+    </script>
+</body>
+</html>
